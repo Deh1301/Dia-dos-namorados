@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+        body{
+            background-color: black;
+            color: rgba(219, 27, 27, 0.702);
+            font-family: "Tiny5", sans-serif;
+            text-align: center;
+            margin-top: 300px;
+            font-size: 30px;
+        }
+        .E{
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .U{
+            opacity: 0;
+            transition: .5s;
+        }
+        .TE{
+            opacity: 0;
+            transition: .5s;
+        }
+        .AMO{
+            opacity: 0;
+            transition: .5s;
+        }
+        .MEU{
+            opacity: 0;
+            transition: .5s;
+        }
+        .AMOR{
+            opacity: 0;
+            transition: .5s;
+        }
+    </style>
+</head>
+<body>
+    <h2><strong class="E">E</strong><strong class="U">u</strong> <strong class="TE">te</strong> <strong class="AMO">Amo</strong> <strong class="MEU">meu</strong> <strong class="AMOR">Amor</strong></h2>
+    <script>
+        const E = document.querySelector(".E")
+        const U = document.querySelector(".U")
+        const TE = document.querySelector(".TE")
+        const AMO= document.querySelector(".AMO")
+        const MEU = document.querySelector(".MEU")
+        const AMOR = document.querySelector(".AMOR")
+        const h2= document.querySelector("h2")
+
+        function Es(){
+         setTimeout(()=>{
+          E.style.opacity='100%'
+         },1000)
+        }
+        Es()
+
+        function Us(){
+            setTimeout(()=>{
+             U.style.opacity='100%'
+            },1500)
+           }
+           Us()
+
+           function Te(){
+            setTimeout(()=>{
+             TE.style.opacity='100%'
+            },2000)
+           }
+           Te()
+
+           function Amo(){
+            setTimeout(()=>{
+             AMO.style.opacity='100%'
+            },2500)
+           }
+           Amo()
+
+           function Meu(){
+            setTimeout(()=>{
+             MEU.style.opacity='100%'
+            },3000)
+           }
+           Meu()
+
+           function Amor(){
+            setTimeout(()=>{
+             AMOR.style.opacity='100%'
+            },3500)
+           }
+           Amor()
+
+           
+           function H2(){
+            setInterval(()=>{
+                h2.style.textShadow = "2px 2px 2px red"
+                h2.style.transition='.5s'
+            },1000)
+           }
+
+           function notH2(){
+            setInterval(()=>{
+                h2.style.textShadow = "none"
+            },2000)
+           }
+           H2()
+
+           notH2()
+
+        
+    </script>
+</body>
+</html>
